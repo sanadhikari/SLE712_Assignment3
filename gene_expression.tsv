@@ -4,7 +4,7 @@ d
 d<-as.data.frame(d)
 d$sanjeevmean<-rowMeans(d)
 d
-k<-d[order(-d$sanjeevmean///),]
+k<-d[order(-d$sanjeevmean),]
 head(k,10)
 which(d[,3]>10)
 dim((d[which(d[,3]<10),]))
